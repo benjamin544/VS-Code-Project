@@ -1,1 +1,0 @@
-Number: 28, Result: Even
