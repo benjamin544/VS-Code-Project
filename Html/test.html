@@ -1,22 +1,102 @@
 <!DOCTYPE html>
-<html lang="he">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>דף HTML ראשוני</title>
-</head>
+       <title>New Website</title>
+      </head>
 <body>
-    <header>
-        <h1>ברוך הבא לדף HTML הראשון שלי!</h1>
-    </header>
+<!--הוספת רקע לדף CSS-->
+<style>
+    body {
+        background-color: #f0f8ff; /* צבע רקע בהיר */
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+    }
+</style>
+<h1>Welcome to my First Website</h1>
+<hr>
+    <!-- ניווט -->
+    <nav>
+        <ul style="list-style-type: none; display: flex; gap: 20px; padding: 0;">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-    <section>
-        <p>זהו דף HTML פשוט שבו תוכלו להתרגל לעבוד עם תגיות בסיסיות כמו &lt;h1&gt;, &lt;p&gt; ו-&lt;header&gt;.</p>
-    </section>
+    <!-- פסקה -->
+    <p>This is my first paragraph. I'm learning HTML step by step!</p>
 
-    <footer>
-        <p>&copy; 2024 כל הזכויות שמורות.</p>
-    </footer>
+    <!-- תמונה -->
+    <img src="Website.png" alt="My Image">
+
+    <!-- קישור חיצוני -->
+    <h1><a href="https://www.google.com" target="_blank">Visit Google</a></h1>
+
+    <!-- תחביבים -->
+    <h2 id="hobbies">My Favorite Hobbies</h2>
+    <ul>
+        <li>Reading</li>
+        <li>Coding</li>
+        <li>Traveling</li>
+    </ul>
+
+    <!-- שלבים ללימוד HTML -->
+    <h2>Steps to Learn HTML</h2>
+    <ol>
+        <li>Understand basic structure</li>
+        <li>Learn about tags</li>
+        <li>Practice coding</li>
+    </ol>
+
+    <!-- טבלה שבועית -->
+    <h2 id="schedule">My Weekly Schedule</h2>
+    <table>
+        <tr>
+            <th>Day</th>
+            <th>Activity</th>
+        </tr>
+        <tr>
+            <td>Monday</td>
+            <td>Work</td>
+        </tr>
+        <tr>
+            <td>Tuesday</td>
+            <td>Gym</td>
+        </tr>
+        <tr>
+            <td>Wednesday</td>
+            <td>Relax</td>
+        </tr>
+    </table>
+
+    <!-- טופס יצירת קשר -->
+    <h2 id="contact">Contact Me</h2>
+    <form action="submit_form.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <!-- סרטון מיוטיוב -->
+    <h2>Watch My Favorite Video</h2>
+    <iframe width="560" height="315" 
+        src="https://www.youtube.com/embed/j6Ule7GXaRs" 
+        title="YouTube video" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+    </iframe>
+    <br><br>
+
+    <!-- כפתור עם JavaScript -->
+    <h1><button onclick="alert('Hello! Welcome to my website!')">Click Me</button></h1>
+
 </body>
 </html>
-
