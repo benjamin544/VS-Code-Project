@@ -4,17 +4,134 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
        <title>New Website</title>
+       <style>
+        /* כאן הוספתי את כל ה-CSS שתיארתי */
+        body {
+            background-color: #f0f8ff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #4CAF50;
+            text-align: center;
+            font-size: 36px;
+            margin-top: 20px;
+            background-color: #f1f1f1;
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        h2 {
+            color: #333;
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #4CAF50;
+        }
+
+        table {
+    width: 100%;
+    border-collapse: collapse; /* מיזוג גבולות */
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd; /* גבול דק */
+}
+
+th {
+    background-color: #4CAF50; /* צבע רקע לכותרת */
+    color: white; /* צבע טקסט לבן */
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* צבע רקע לשורות זוגיות */
+}
+
+tr:hover {
+    background-color: #ddd; /* צבע רקע כאשר העכבר מרחף */
+}
+
+button {
+    transition: transform 0.2s ease-in-out, background-color 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.1); /* הגדלת כפתור בעת ריחוף */
+    background-color: #45a049;
+}
+
+img {
+    transition: transform 0.3s ease-in-out;
+}
+
+img:hover {
+    transform: scale(1.05); /* התמונה תתפוס גודל מעט גדול יותר בעת ריחוף */
+}
+
+
+
+        img {
+    width: 100%; /* התמונות יתפשטו לגודל של ההורה */
+    max-width: 600px; /* תמונה לא תצא מגבולות */
+    border-radius: 10px; /* פינות מעוגלות */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* צללים */
+    display: block;
+    margin: 20px auto; /* ממרכז את התמונה */
+}
+a {
+    color: #1a73e8; /* צבע קישור כחול */
+    text-decoration: none; /* הסרת קו תחתון */
+}
+
+a:hover {
+    text-decoration: underline; /* קו תחתון בעת ריחוף */
+    color: #ff5722; /* שינוי צבע בעת ריחוף */
+}
+
+    </style>
       </head>
 <body>
-<!--הוספת רקע לדף CSS-->
-<style>
-    body {
-        background-color: #f0f8ff; /* צבע רקע בהיר */
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 20px;
-    }
-</style>
 <h1>Welcome to my First Website</h1>
 <hr>
     <!-- ניווט -->
@@ -23,6 +140,7 @@
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
+            <li><a href="#downloads">Downloads</a></li>
         </ul>
     </nav>
 
@@ -97,6 +215,10 @@
 
     <!-- כפתור עם JavaScript -->
     <h1><button onclick="alert('Hello! Welcome to my website!')">Click Me</button></h1>
-
+ <!-- סעיף "על אודות" -->
+ <section id="about">
+    <h2>About Me</h2>
+    <p>Hello, I'm a beginner in web development! This is my first website where I am learning HTML and CSS.</p>
+</section>
 </body>
 </html>
