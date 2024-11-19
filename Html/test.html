@@ -13,22 +13,7 @@
             padding: 20px;
         }
 
-        h1 {
-            color: #4CAF50;
-            text-align: center;
-            font-size: 36px;
-            margin-top: 20px;
-            background-color: #f1f1f1;
-            padding: 10px;
-            border-radius: 8px;
-        }
-
-        h2 {
-            color: #333;
-            font-size: 28px;
-            margin-bottom: 10px;
-        }
-
+      
         p {
             font-size: 18px;
             line-height: 1.6;
@@ -128,12 +113,57 @@ a:hover {
     text-decoration: underline; /* קו תחתון בעת ריחוף */
     color: #ff5722; /* שינוי צבע בעת ריחוף */
 }
+/* עיצוב הכותרת עם אנימציה */
+h1 {
+    color: #4CAF50;
+    text-align: center;
+    font-size: 36px;
+    margin-top: 20px;
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 8px;
+    animation: colorChange 3s infinite, moveText 2s ease-in-out infinite;
+}
 
-    </style>
+/* אנימציה לשינוי צבעים */
+@keyframes colorChange {
+    0% {
+        color: #4CAF50;
+    }
+    25% {
+        color: #FF5722;
+    }
+    50% {
+        color: #FFC107;
+    }
+    75% {
+        color: #2196F3;
+    }
+    100% {
+        color: #4CAF50;
+    }
+}
+
+/* אנימציה לתזוזה של הכותרת */
+@keyframes moveText {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(10px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+        </style>
       </head>
 <body>
 <h1>Welcome to my First Website</h1>
 <hr>
+
+
     <!-- ניווט -->
     <nav>
         <ul style="list-style-type: none; display: flex; gap: 20px; padding: 0;">
@@ -220,5 +250,6 @@ a:hover {
     <h2>About Me</h2>
     <p>Hello, I'm a beginner in web development! This is my first website where I am learning HTML and CSS.</p>
 </section>
+
 </body>
 </html>
