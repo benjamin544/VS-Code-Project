@@ -1,0 +1,154 @@
+<style>
+/* עיצוב כללי */
+body {
+    background-color: #f0f8ff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/* עיצוב ניווט */
+nav {
+    background-color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #4CAF50;
+}
+
+/* עיצוב טבלאות */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+/* עיצוב כפתורים */
+button {
+    transition: transform 0.2s ease-in-out, background-color 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.1);
+    background-color: #45a049;
+}
+
+/* עיצוב תמונות */
+img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: block;
+    margin: 20px auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+/* עיצוב קישורים */
+a {
+    color: #1a73e8;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #ff5722;
+}
+
+/* עיצוב כותרות */
+h1 {
+    color: #4CAF50;
+    text-align: center;
+    font-size: 36px;
+    margin-top: 20px;
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 8px;
+    animation: colorChange 3s infinite, moveText 2s ease-in-out infinite;
+}
+
+/* אנימציה לשינוי צבעים */
+@keyframes colorChange {
+    0% {
+        color: #4CAF50;
+    }
+    25% {
+        color: #FF5722;
+    }
+    50% {
+        color: #FFC107;
+    }
+    75% {
+        color: #2196F3;
+    }
+    100% {
+        color: #4CAF50;
+    }
+}
+
+/* אנימציה לתזוזה של הכותרת */
+@keyframes moveText {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(10px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+</style>

@@ -4,6 +4,7 @@
 # לא להתעלם מקובץ .gitignore
 !.gitignore
 
+
 # לא להתעלם מקובץ README.md
 !README.md
 
@@ -11,3 +12,8 @@
 !Python/
 !Html/
 !Bash/
+
+
+!styles.css
+!Downloads.html
+!Website.png
