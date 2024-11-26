@@ -5,11 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
        <title>New Website</title>
        <link rel="stylesheet" href="styles.css">
+       
       </head>
 <body>
+
 <h1>Welcome to my First Website</h1>
+
 <hr>
 
+<script src="script.js"></script>
 
     <!-- ניווט -->
     <nav>
@@ -20,6 +24,9 @@
             <li><a href="downloads.html">Downloads</a></li>
         </ul>
     </nav>
+<!--הוסף כפתור נוסף לשינוי הצבע:javascript-->
+    <button onclick="changeBackgroundColor()">Change Background Color</button>
+
 
     <!-- פסקה -->
     <p><i>This is my first paragraph. I'm learning HTML step by step!</i></p>
@@ -91,7 +98,8 @@
     <br><br>
 
     <!-- כפתור עם JavaScript -->
-    <h1><button onclick="alert('Hello! Welcome to my website!')">Click Me</button></h1>
+    <h1><button onclick="showAlert()">Click Me</button>
+    </h1>
  <!-- סעיף "על אודות" -->
  <section id="about">
     <h2><mark>About Me</mark></h2>
