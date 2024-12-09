@@ -10,3 +10,5 @@ function changeBackgroundColor() {
     // משנה את צבע הרקע של הדף
     document.body.style.backgroundColor = randomColor;
 }
+
+
