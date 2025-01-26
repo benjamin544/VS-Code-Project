@@ -2,9 +2,26 @@ pipeline {
     agent any
 
     stages {
+        stage('Checkout SCM') {
+            steps {
+                checkout scm
+            }
+        }
+        
         stage('Print Hello World') {
             steps {
                 echo 'Hello World'
+            }
+        }
+        
+        stage('Run Python Script') {
+            steps {
+                script {
+                    // לוודא ש-Python מותקן במערכת
+                    sh 'python --version'  // הצגת גרסת Python
+                    // הרצת הסקריפט Python
+                    sh 'python pythonJenkins.py'
+                }
             }
         }
     }
