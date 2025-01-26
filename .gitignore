@@ -12,9 +12,10 @@
 !Python/
 !Html/
 !Bash/
-
+!Jenkins
 
 !styles.css
 !Downloads.html
 !Website.png
 !script.js
+!Jenkinsfile
