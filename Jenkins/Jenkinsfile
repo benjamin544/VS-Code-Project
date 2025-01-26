@@ -19,7 +19,7 @@ pipeline {
                 dir('Jenkins') {
                     script {
                         // הרצת Python מתוך תיקיית Jenkins
-                        bat 'pythonJenkins.py'
+                        bat 'C:\\Users\\Benjamin\\AppData\\Local\\Microsoft\\WindowsApps\\python.exe C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\jenkinsfile\\Jenkins\\pythonJenkins.py'
                     }
                 }
             }
