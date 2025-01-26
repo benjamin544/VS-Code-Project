@@ -13,14 +13,14 @@ pipeline {
                 echo 'Hello World'
             }
         }
-
+        
         stage('Run Python Script') {
             steps {
-                script {
-                    // בדיקת גרסת Python
-                    bat 'python --version'
-                    // הרצת הסקריפט Python
-                    bat 'python pythonJenkins.py'
+                dir('Jenkins') {
+                    script {
+                        // הרצת Python מתוך תיקיית Jenkins
+                        bat 'python pythonJenkins.py'
+                    }
                 }
             }
         }
