@@ -19,7 +19,7 @@ pipeline {
                 dir('Jenkins') {
                     script {
                         // הרצת Python מתוך תיקיית Jenkins
-                        bat 'python pythonJenkins.py'
+                        bat 'pythonJenkins.py'
                     }
                 }
             }
