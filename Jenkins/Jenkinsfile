@@ -20,9 +20,10 @@ pipeline {
                     // בדיקת גרסת Python
                     bat 'python --version'
                     // הרצת הסקריפט Python
-                    bat 'python pythonJenkins.py
+                    bat 'python pythonJenkins.py'
                 }
             }
         }
     }
 }
+
