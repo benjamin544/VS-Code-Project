@@ -1,9 +1,10 @@
 # התעלמות מכל הקבצים כברירת מחדל
 *
 
+# ביטול ההתעלמות מהקובץ first-pipline.yml
 !.github/
-!.github/workflows
-!.github/workflows/first-pipline.yml
+!.github/workflows/
+!.github/workflows/frist-pipline.yml
 
 
 # לא להתעלם מקובץ .gitignore עצמו
