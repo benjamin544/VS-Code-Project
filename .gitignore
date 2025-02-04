@@ -1,6 +1,11 @@
 # התעלמות מכל הקבצים כברירת מחדל
 *
 
+# וודא שהתיקייה והקובץ לא מתעלמים
+!.github
+!.github/workflows
+!.github/workflows/frist-pipline.yml
+
 # לא להתעלם מקובץ .gitignore עצמו
 !.gitignore
 
@@ -13,12 +18,6 @@
 !Bash/
 !Jenkins/
 
-# ביטול ההתעלמות מהתיקייה .github וכל מה שבתוכה
-!.github
-!.github/
-!.github/workflows
-!.github/workflows/
-!.github/workflows/frist-pipline.yml
 
 # ביטול ההתעלמות מקבצים ספציפיים
 !styles.css
