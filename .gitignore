@@ -1,9 +1,10 @@
 # התעלמות מכל הקבצים כברירת מחדל
 *
-
-# וודא שהתיקייה והקובץ לא מתעלמים
+# ביטול ההתעלמות מהתיקייה .github וכל מה שבתוכה
 !.github
+!.github/
 !.github/workflows
+!.github/workflows/
 !.github/workflows/frist-pipline.yml
 
 # לא להתעלם מקובץ .gitignore עצמו
