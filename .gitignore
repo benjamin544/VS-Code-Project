@@ -1,9 +1,8 @@
-# להתעלם מכל הקבצים
+# התעלמות מכל הקבצים כברירת מחדל
 *
 
-# לא להתעלם מקובץ .gitignore
+# לא להתעלם מקובץ .gitignore עצמו
 !.gitignore
-
 
 # לא להתעלם מקובץ README.md
 !README.md
@@ -12,17 +11,19 @@
 !Python/
 !Html/
 !Bash/
-!Jenkins
+!Jenkins/
 
+# ביטול ההתעלמות מהתיקייה .github וכל מה שבתוכה
+!.github
+!.github/
+!.github/workflows
+!.github/workflows/
+!.github/workflows/frist-pipline.yml
 
+# ביטול ההתעלמות מקבצים ספציפיים
 !styles.css
 !Downloads.html
 !Website.png
 !script.js
 !Jenkinsfile
 !pythonJenkins.py
-
-# ביטול ההתעלמות מהתיקייה .github
-!.github/
-!.github/workflows/
-!.github/workflows/frist-pipline.yml
