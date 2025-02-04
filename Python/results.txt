@@ -1,0 +1,2 @@
+Number: 28, Result: Even
+Number: 58, Result: Even
