@@ -13,7 +13,6 @@
 !Html/
 !Bash/
 !Jenkins
-!.github/workflows/frist-pipline.yml
 
 
 !styles.css
@@ -22,3 +21,8 @@
 !script.js
 !Jenkinsfile
 !pythonJenkins.py
+
+# ביטול ההתעלמות מהתיקייה .github
+!.github/
+!.github/workflows/
+!.github/workflows/frist-pipline.yml
